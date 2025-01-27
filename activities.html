@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nông trại Hải Vân - Sân Chim Vàm Hồ</title>
+    <style>
+      /* CSS chung cho toàn bộ trang */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe6f1; 
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #f28d8d; 
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Logo hình tròn ở góc trái */
+header img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    object-fit: cover;
+}
+
+/* Điều hướng menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #e64a8d;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd1e0;
+}
+
+/* Phần nội dung chính */
+section#activities {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+section#activities h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #f28d8d;
+}
+
+section#activities ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+section#activities ul li {
+    background-color: #f9c7d7; 
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    line-height: 1.8;
+}
+
+section#activities ul li:hover {
+    background-color: #f1a9c0;
+}
+
+section#activities img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #e64a8d; 
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* CSS cho điện thoại và màn hình nhỏ */
+@media screen and (max-width: 768px) {
+    /* Điều chỉnh header */
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    /* Điều chỉnh menu */
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1.2em;
+        padding: 10px 0;
+    }
+
+    /* Phần nội dung chính */
+    section#activities h2 {
+        font-size: 1.5em;
+    }
+
+    section#activities ul li {
+        font-size: 1em;
+        padding: 12px;
+    }
+
+    /* Hình ảnh trong hoạt động */
+    section#activities img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Footer */
+    footer p {
+        font-size: 0.9em;
+    }
+}
+
+/* CSS cho điện thoại (từ 480px trở xuống) */
+@media screen and (max-width: 480px) {
+    /* Điều chỉnh font và khoảng cách */
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    section#activities h2 {
+        font-size: 1.3em;
+    }
+
+    section#activities ul li {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
+
+    .chat-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .chat-box {
+        max-height: 200px;
+    }
+
+    textarea {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 12px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+         <img src="images/logo.jpg" alt="Logo Nhóm" class="logo">
+        <h1>Nông trại Hải Vân - Sân Chim Vàm Hồ</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="tourist-spots.html">Điểm Du Lịch</a></li>
+                <li><a href="activities.html">Hoạt Động</a></li>
+                <li><a href="amthuc.html">Ẩm thực</a></li>
+                <li><a href="map.html">Bản Đồ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="activities">
+        <h2>🌾 Hoạt động nổi bật:</h2>
+        <ul>
+            <li>• Bắt cá dưới ao: Cảm giác tự tay bắt được chú cá lóc mập mạp thật thú vị phải không nào? Đây không chỉ là trò chơi mà còn là dịp để kết nối, làm việc nhóm và khám phá đời sống miền quê.</li>
+            <img src="images/a1.jpg" alt="ảnh bắt cá">
+            <img src="images/a2.jpg" alt="ảnh bắt cá">
+
+            <li>• Tắm mương và chèo xuồng: Với áo phao an toàn, mọi người cùng thỏa sức bơi lội, ngắm nhìn khung cảnh thiên nhiên xanh mát.</li>
+            <img src="images/a3.jpg" alt="Tắm mương và chèo xuồng">
+
+            <li>• Tham gia team building: Tiếng cười giòn giã, những pha “té nước” hài hước tạo nên không khí đầy hứng khởi.</li>
+            <img src="images/a4.jpg" alt="hoạt động">
+            <img src="images/a5.jpg" alt="hoạt động">
+        </ul>
+    </section>
+        <div class="chat-container">
+        <div class="chat-bubble" onclick="toggleChatBox()">Xem thêm</div>
+        <div class="chat-box" id="chat-box">
+            <!-- Các bình luận sẽ được hiển thị ở đây -->
+        </div>
+        <textarea id="comment-input" placeholder="Viết bình luận..."></textarea>
+        <button onclick="addComment()">Bình luận</button>
+    </div>
+
+    <footer>
+        <p>❤️Được thực hiện bởi:Lân,Hiển,Nhung,Mai.❤️</p>
+    </footer>
+        <script>
+        function toggleChatBox() {
+            const chatBox = document.getElementById('chat-box');
+            chatBox.style.display = (chatBox.style.display === 'none' || chatBox.style.display === '') ? 'block' : 'none';
+        }
+
+        function addComment() {
+            const commentInput = document.getElementById('comment-input');
+            const commentText = commentInput.value.trim();
+            
+            if (commentText) {
+                const chatBox = document.getElementById('chat-box');
+                
+                // Lấy tên người gửi và thời gian hiện tại
+                const username = "Người dùng"; // Bạn có thể thay đổi tên này theo yêu cầu
+                const time = new Date().toLocaleString(); // Lấy thời gian hiện tại dưới dạng chuỗi
+                
+                // Tạo một phần tử bình luận dưới dạng bong bóng
+                const commentBubble = document.createElement('div');
+                commentBubble.classList.add('chat-bubble');
+                
+                // Thêm nội dung bình luận vào bong bóng
+                const commentContent = document.createElement('div');
+                commentContent.textContent = commentText;
+                
+                // Thêm tên người gửi và thời gian
+                const commentInfo = document.createElement('div');
+                commentInfo.classList.add('comment-info');
+                commentInfo.textContent = `${username} - ${time}`;
+                
+                // Thêm vào phần tử bình luận
+                commentBubble.appendChild(commentContent);
+                commentBubble.appendChild(commentInfo);
+                
+                // Thêm bình luận vào hộp chat
+                chatBox.appendChild(commentBubble);
+                
+                // Cuộn xuống dưới cùng của hộp chat
+                chatBox.scrollTop = chatBox.scrollHeight;
+                
+                // Xóa nội dung nhập
+                commentInput.value = '';
+            }
+        }
+        <script>
+    // Kiểm tra kích thước màn hình của người dùng
+    function redirectBasedOnScreenSize() {
+        var screenWidth = window.innerWidth;
+        
+        // Nếu màn hình nhỏ hơn hoặc bằng 768px, chuyển hướng đến phiên bản di động
+        if (screenWidth <= 768) {
+            // Thay đổi URL của trang web cho phiên bản di động
+            window.location.href = "m_version.html";  // Chỉ định URL của phiên bản di động
+        } else {
+            // Nếu màn hình lớn hơn 768px, chuyển hướng đến phiên bản dành cho máy tính
+            window.location.href = "desktop_version.html";  // Chỉ định URL của phiên bản dành cho máy tính
+        }
+    }
+
+    // Gọi hàm kiểm tra khi tải trang
+    window.onload = redirectBasedOnScreenSize;
+</script>
+
+    </script>
+
+</body>
+</html>
